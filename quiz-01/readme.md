@@ -6,3 +6,4 @@ sudo nano readme.md
 git add readme.md
 git commit -a -m readme.md
 git push
+cp p1.py p2.py
