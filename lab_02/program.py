@@ -1,7 +1,7 @@
 #vowel -> just add "ay" to end otherwise do first to end and add "ay"
 def part_pig_latin(name):
 
-    if name[0]!= ("a" or "e" or "i" or "o" or "u"):
+    if name[0]!= ("a" or "e" or "i" or "o" or "u" or "A" or "E" or "I" or "O" or "U"):
         return name[1:] + name[0] + "ay"
     else:
         return name+"ay"
