@@ -1,3 +1,4 @@
+#Madison Chen and Kushendra Ramrup
 #vowel -> just add "ay" to end otherwise do first to end and add "ay"
 def part_pig_latin(name):
 
