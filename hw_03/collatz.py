@@ -1,3 +1,4 @@
+#Madison Chen, Crystal Fajardo, Nurisma Donuk
 #collatz.py
 #t(n) n if
 #in the loop print out sequence return and print out the # of steps
