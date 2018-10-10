@@ -4,7 +4,6 @@ def mysqrt(number):
     guess=1
     while (guess!= number**(1/2)):
         guess=(guess+number/guess)/2
-
         print (guess)
     return str(guess)+" this is the square root of "+ str(number)
 #print(mysqrt(16))
