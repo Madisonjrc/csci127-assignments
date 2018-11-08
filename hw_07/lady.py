@@ -1,27 +1,25 @@
 def happy_ladybugs(b):
-    values = distinct_values(b)
-    if '_' in values:
-        values.remove('_')
-        for v in values:
-            count = 0
-            for c in b:
-                if v == c:
-                    count += 1
-            if count <= 1:
-                return 'NO'
-        return 'YES'
-    
+    if '_' in b:
+        b=b.replace('_',"")
+        count={}
+        for i in b:
+            count.setdefault(i,0)
+            count[i] += 1
+        for i in count.values():
+            if i < 2:
+                return 'no'
+        
+        return 'yes'
     elif is_full(b):
-        return 'YES'
-    
+        return 'yes'
     else:
-        return 'NO'
+        return 'no'
+
     
     
 def is_full(b):
     if len(b) == 1:
         return False
-    
     prev = b[0]
     streak = 1  
     for i in range(1,len(b)):
